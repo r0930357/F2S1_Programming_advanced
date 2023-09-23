@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = VakkenOefening.Resources.S
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
+[C:/Users/tombe/OneDrive - Thomas More/Documenten/School/2023-2024/Semester 1/F2S1_Programming_advanced/Les 1/VakkenOefening/Resources/Styles/CustumStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VakkenOefening.Resources.Styles.CustumStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\CustumStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\CustumStyles.xaml
+
 [C:/Users/tombe/OneDrive - Thomas More/Documenten/School/2023-2024/Semester 1/F2S1_Programming_advanced/Les 1/VakkenOefening/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VakkenOefening.Resources.Styles.Styles.xaml

@@ -7,63 +7,85 @@
     <ScrollView>
         <Grid ColumnDefinitions="*,*"
 			ColumnSpacing="5"
-			RowDefinitions="*, *, *, Auto" 
+			RowDefinitions="*, *, *, *, *, *, *, Auto" 
 			RowSpacing="0">
 
             <Label Grid.Row="0" 
-                   Grid.ColumnSpan="2"
-                   Text="Vakken"/>
+                   Grid.ColumnSpan="2" 
+                   Text="Vakken"
+                   Style="{StaticResource labelStyle}"/>
 
             <Label Grid.Row="1" 
                    Grid.Column="0"
-                   Text="Vak1"/>
+                   Text="Vak1"
+                   Style="{StaticResource labelStyle}"/>
+
+            <Label Grid.Row="1" 
+                   Grid.Column="1" 
+                   Text="Vak2"
+                   Style="{StaticResource labelStyle}"/>
 
             <ImageButton
-                   Grid.Row="1" 
+                   Grid.Row="2" 
                    Grid.Column="0"
                    x:Name="Vak1"
                    Source="vak1.jpg"
-                   Clicked="Vak1_Clicked"/>
-
-            <Label Grid.Row="1" 
-                   Grid.Column="1"
-                   Text="Vak2"/>
-
+                   Clicked="Vak1_Clicked"
+                   Style="{StaticResource imageButtonStyle}"/>
+            
             <ImageButton
-                   Grid.Row="1" 
+                   Grid.Row="2" 
                    Grid.Column="1"
                    x:Name="Vak2"
                    Source="vak2.jpeg"
-                   Clicked="Vak2_Clicked"/>
+                   Clicked="Vak2_Clicked"
+                   Style="{StaticResource imageButtonStyle}"/>
+
+            <Label Grid.Row="3" 
+                   Grid.Column="0"
+                   Text="Vak3"
+                   Style="{StaticResource labelStyle}"/>
             
-            <Label Grid.Row="2" 
-                   Grid.Column="0" 
-                   Text="Vak 3"/>
+            <Label Grid.Row="3" 
+                   Grid.Column="1"
+                   Text="Vak4"
+                   Style="{StaticResource labelStyle}"/>
 
             <ImageButton
+                   Grid.Row="4" 
+                   Grid.Column="0"
                    x:Name="Vak3"
                    Source="vak3.jpg"
-                   Clicked="Vak3_Clicked"/>
-            
-            <Label Grid.Row="2" 
-                   Grid.Column="1" 
-                   Text="Vak 4"/>
+                   Clicked="Vak3_Clicked"
+                   Style="{StaticResource imageButtonStyle}"/>
 
             <ImageButton
+                   Grid.Row="4" 
+                   Grid.Column="1"
                    x:Name="Vak4"
                    Source="vak4.jpeg"
-                   Clicked="Vak4_Clicked"/>
-            
-            <Label Grid.Row="3" 
-                   Grid.Column="0" 
-                   Text="Vak 5"/>
+                   Clicked="Vak4_Clicked"
+                   Style="{StaticResource imageButtonStyle}"/>
+
+            <Label Grid.Row="5" 
+                   Grid.Column="0"
+                   Text="Vak5"
+                   Style="{StaticResource labelStyle}"/>
+
+            <Label Grid.Row="5" 
+                   Grid.Column="1" 
+                   BackgroundColor="Orange"
+                   Style="{StaticResource labelStyle}"/>
 
             <ImageButton
+                   Grid.Row="6" 
+                   Grid.Column="0"
                    x:Name="Vak5"
                    Source="vak5.jpg"
-                   Clicked="Vak5_Clicked"/>
+                   Clicked="Vak5_Clicked"
+                   Style="{StaticResource imageButtonStyle}"/>
 
-            <Label Grid.Row="3" 
+            <Label Grid.Row="6" 
                    Grid.Column="1" 
                    BackgroundColor="Orange"/>
 
