@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VakkenOefening.Views.OverzichtVakkenGrid"
+             Title="OverzichtVakkenGrid">
+
+    <ScrollView>
+        <Grid ColumnDefinitions="*,*"
+			ColumnSpacing="5"
+			RowDefinitions="*, *, *, Auto" 
+			RowSpacing="0">
+
+            <Label Grid.Row="0" 
+                   Grid.ColumnSpan="2"
+                   Text="Vakken"/>
+
+            <Label Grid.Row="1" 
+                   Grid.Column="0"
+                   Text="Vak1"/>
+
+            <ImageButton
+                   Grid.Row="1" 
+                   Grid.Column="0"
+                   x:Name="Vak1"
+                   Source="vak1.jpg"
+                   Clicked="Vak1_Clicked"/>
+
+            <Label Grid.Row="1" 
+                   Grid.Column="1"
+                   Text="Vak2"/>
+
+            <ImageButton
+                   Grid.Row="1" 
+                   Grid.Column="1"
+                   x:Name="Vak2"
+                   Source="vak2.jpeg"
+                   Clicked="Vak2_Clicked"/>
+            
+            <Label Grid.Row="2" 
+                   Grid.Column="0" 
+                   Text="Vak 3"/>
+
+            <ImageButton
+                   x:Name="Vak3"
+                   Source="vak3.jpg"
+                   Clicked="Vak3_Clicked"/>
+            
+            <Label Grid.Row="2" 
+                   Grid.Column="1" 
+                   Text="Vak 4"/>
+
+            <ImageButton
+                   x:Name="Vak4"
+                   Source="vak4.jpeg"
+                   Clicked="Vak4_Clicked"/>
+            
+            <Label Grid.Row="3" 
+                   Grid.Column="0" 
+                   Text="Vak 5"/>
+
+            <ImageButton
+                   x:Name="Vak5"
+                   Source="vak5.jpg"
+                   Clicked="Vak5_Clicked"/>
+
+            <Label Grid.Row="3" 
+                   Grid.Column="1" 
+                   BackgroundColor="Orange"/>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
