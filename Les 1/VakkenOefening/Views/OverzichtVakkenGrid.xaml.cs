@@ -2,29 +2,36 @@ namespace VakkenOefening.Views;
 
 public partial class OverzichtVakkenGrid : ContentPage
 {
-	public OverzichtVakkenGrid()
-	{
-		InitializeComponent();
-	}
-
-    private void Vak1_Clicked(object sender, EventArgs e)
+	public OverzichtVakkenGrid(OverzichtVakkenViewModel vm)
     {
+        InitializeComponent();
+        vm.ToonVakken();
+        BindingContext = vm;
     }
-
-    private void Vak2_Clicked(object sender, EventArgs e)
+    private void ImageButton_Clicked(object sender, EventArgs e)
     {
-    }
+        string idVak = (sender as ImageButton).AutomationId;
 
-    private void Vak3_Clicked(object sender, EventArgs e)
-    {
+        if (!string.IsNullOrEmpty(idVak))
+        {
+            switch (idVak)
+            {
+                case "1":
+                    Navigation.PushAsync(new Views.Vak1(new(new(), "Vak1"), int.Parse(idVak)));
+                    break;
+                case "2":
+                    Navigation.PushAsync(new Views.Vak2(new(new(), "Vak2"), int.Parse(idVak)));
+                    break;
+                case "3":
+                    Navigation.PushAsync(new Views.Vak3(new(new(), "Vak3"), int.Parse(idVak)));
+                    break;
+                case "4":
+                    Navigation.PushAsync(new Views.Vak4(new(new(), "Vak4"), int.Parse(idVak)));
+                    break;
+                case "5":
+                    Navigation.PushAsync(new Views.Vak5(new(new(), "Vak5"), int.Parse(idVak)));
+                    break;
+            }
+        }
     }
-
-    private void Vak4_Clicked(object sender, EventArgs e)
-    {
-    }
-
-    private void Vak5_Clicked(object sender, EventArgs e)
-    {
-    }
-
 }

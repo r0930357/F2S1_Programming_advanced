@@ -1,0 +1,12 @@
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\bin\Debug\net6.0-windows10.0.19041.0\Models.deps.json
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\bin\Debug\net6.0-windows10.0.19041.0\Models.dll
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\bin\Debug\net6.0-windows10.0.19041.0\Models.pdb
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\Models.csproj.AssemblyReference.cache
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\Models.AssemblyInfoInputs.cache
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\Models.AssemblyInfo.cs
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\Models.dll
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\refint\Models.dll
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\Models.pdb
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 2\Models\obj\Debug\net6.0-windows10.0.19041.0\ref\Models.dll

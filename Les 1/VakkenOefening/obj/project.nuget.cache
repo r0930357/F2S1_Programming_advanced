@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Mrzw6LZzTbVvjfEBIrSdx4w5bVoRwsjFSjQ2aZCXjffqJoWCye3JmRZBfWe1ACdqhIX/R837uIzbQj3FVyvcMQ==",
+  "dgSpecHash": "fh0erLOaziw7z8CUvQ0faRH9mnBp7rWj8Mth45ncmS2aoBzVEFItLxHSzXuIC1RAL6uIcgBlTjEgmqt+0HjUgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\tombe\\OneDrive - Thomas More\\Documenten\\School\\2023-2024\\Semester 1\\F2S1_Programming_advanced\\Les 1\\VakkenOefening\\VakkenOefening.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tombe\\.nuget\\packages\\communitytoolkit.maui\\2.0.0\\communitytoolkit.maui.2.0.0.nupkg.sha512",
+    "C:\\Users\\tombe\\.nuget\\packages\\communitytoolkit.maui.core\\2.0.0\\communitytoolkit.maui.core.2.0.0.nupkg.sha512",
+    "C:\\Users\\tombe\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\tombe\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\tombe\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\tombe\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

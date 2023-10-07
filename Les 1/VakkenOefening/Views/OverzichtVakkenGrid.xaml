@@ -1,95 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:VakkenOefening.Models"
+             xmlns:viewmodel="clr-namespace:VakkenOefening.ViewModels"
+             x:DataType="viewmodel:OverzichtVakkenViewModel"
              x:Class="VakkenOefening.Views.OverzichtVakkenGrid"
-             Title="OverzichtVakkenGrid">
+             Title="{Binding Title}">
 
     <ScrollView>
-        <Grid ColumnDefinitions="*,*"
-			ColumnSpacing="5"
-			RowDefinitions="*, *, *, *, *, *, *, Auto" 
-			RowSpacing="0">
-
-            <Label Grid.Row="0" 
-                   Grid.ColumnSpan="2" 
-                   Text="Vakken"
-                   Style="{StaticResource labelStyle}"/>
-
-            <Label Grid.Row="1" 
-                   Grid.Column="0"
-                   Text="Vak1"
-                   Style="{StaticResource labelStyle}"/>
-
-            <Label Grid.Row="1" 
-                   Grid.Column="1" 
-                   Text="Vak2"
-                   Style="{StaticResource labelStyle}"/>
-
-            <ImageButton
-                   Grid.Row="2" 
-                   Grid.Column="0"
-                   x:Name="Vak1"
-                   Source="vak1.jpg"
-                   Clicked="Vak1_Clicked"
-                   Style="{StaticResource imageButtonStyle}"/>
-            
-            <ImageButton
-                   Grid.Row="2" 
-                   Grid.Column="1"
-                   x:Name="Vak2"
-                   Source="vak2.jpeg"
-                   Clicked="Vak2_Clicked"
-                   Style="{StaticResource imageButtonStyle}"/>
-
-            <Label Grid.Row="3" 
-                   Grid.Column="0"
-                   Text="Vak3"
-                   Style="{StaticResource labelStyle}"/>
-            
-            <Label Grid.Row="3" 
-                   Grid.Column="1"
-                   Text="Vak4"
-                   Style="{StaticResource labelStyle}"/>
-
-            <ImageButton
-                   Grid.Row="4" 
-                   Grid.Column="0"
-                   x:Name="Vak3"
-                   Source="vak3.jpg"
-                   Clicked="Vak3_Clicked"
-                   Style="{StaticResource imageButtonStyle}"/>
-
-            <ImageButton
-                   Grid.Row="4" 
-                   Grid.Column="1"
-                   x:Name="Vak4"
-                   Source="vak4.jpeg"
-                   Clicked="Vak4_Clicked"
-                   Style="{StaticResource imageButtonStyle}"/>
-
-            <Label Grid.Row="5" 
-                   Grid.Column="0"
-                   Text="Vak5"
-                   Style="{StaticResource labelStyle}"/>
-
-            <Label Grid.Row="5" 
-                   Grid.Column="1" 
-                   BackgroundColor="Orange"
-                   Style="{StaticResource labelStyle}"/>
-
-            <ImageButton
-                   Grid.Row="6" 
-                   Grid.Column="0"
-                   x:Name="Vak5"
-                   Source="vak5.jpg"
-                   Clicked="Vak5_Clicked"
-                   Style="{StaticResource imageButtonStyle}"/>
-
-            <Label Grid.Row="6" 
-                   Grid.Column="1" 
-                   BackgroundColor="Orange"/>
-
+        <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *, Auto">
+            <StackLayout Grid.Row="3" Grid.Column="1" BindableLayout.ItemsSource="{Binding Vakken}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="model:Vak">
+                        <StackLayout Grid.Row="{Binding RowNumberGrid}" Grid.Column="{Binding ColumnNumberGrid}">
+                            <!-- Tekstvak -->
+                            <Label x:Name="lblVak" Text="{Binding Naam}" Style="{StaticResource labelStyle}"/>
+                            <!-- Afbeelding -->
+                            <ImageButton x:Name="btnImage" Source="{Binding Afbeelding}" AutomationId="{Binding Id}" Clicked="ImageButton_Clicked" Style="{StaticResource imageButtonStyle}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
         </Grid>
     </ScrollView>
-
 </ContentPage>

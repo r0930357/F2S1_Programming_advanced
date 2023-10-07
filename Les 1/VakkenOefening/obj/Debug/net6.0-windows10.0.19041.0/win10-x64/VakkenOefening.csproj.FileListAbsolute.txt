@@ -380,3 +380,6 @@ C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S
 C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
+C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll

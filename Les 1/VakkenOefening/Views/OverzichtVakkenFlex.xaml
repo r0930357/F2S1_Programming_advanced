@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:VakkenOefening.Models"
+             xmlns:viewmodel="clr-namespace:VakkenOefening.ViewModels"
+             x:DataType="viewmodel:OverzichtVakkenViewModel"
              x:Class="VakkenOefening.Views.OverzichtVakkenFlex"
-             Title="OverzichtVakkenFlex">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="{Binding Title}">
+
+    <ScrollView>
+        <FlexLayout Wrap="Wrap" AlignContent="SpaceEvenly" AlignItems="Center" BindableLayout.ItemsSource="{Binding Vakken}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate x:DataType="model:Vak">
+                    <VerticalStackLayout>
+                        <ImageButton Source="{Binding Afbeelding}" AutomationId="{Binding Id}" Clicked="ImageButton_Clicked" Style="{StaticResource imageButtonStyle}" />
+                        <Label Text="{Binding Naam}" Style="{StaticResource labelStyle}" />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
+    </ScrollView>
 </ContentPage>

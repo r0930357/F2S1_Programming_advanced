@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-09-23T17:18:39.712</Modified>
+      <Modified>2023-10-07T10:31:11.373</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-09-23T16:52:03.189</Modified>
+      <Modified>2023-10-07T10:24:24.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\VakkenOefening.runtimeconfig.json">
       <PackagePath>VakkenOefening.runtimeconfig.json</PackagePath>
-      <Modified>2023-09-23T14:33:53.376</Modified>
+      <Modified>2023-10-07T10:24:24.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\VakkenOefening.dll">
       <PackagePath>VakkenOefening.dll</PackagePath>
-      <Modified>2023-09-23T17:18:38.323</Modified>
+      <Modified>2023-10-07T10:31:10.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>VakkenOefening.exe</PackagePath>
-      <Modified>2023-09-23T17:18:38.350</Modified>
+      <Modified>2023-10-07T10:31:10.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tombe\OneDrive - Thomas More\Documenten\School\2023-2024\Semester 1\F2S1_Programming_advanced\Les 1\VakkenOefening\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\VakkenOefening.deps.json">
       <PackagePath>VakkenOefening.deps.json</PackagePath>
-      <Modified>2023-09-23T16:52:02.891</Modified>
+      <Modified>2023-10-07T10:24:24.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tombe\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.22\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -968,6 +968,18 @@
     <AppxPackagedFile Include="C:\Users\tombe\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tombe\.nuget\packages\communitytoolkit.maui\2.0.0\lib\net6.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+      <Modified>2022-11-08T23:34:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tombe\.nuget\packages\communitytoolkit.maui.core\2.0.0\lib\net6.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+      <Modified>2022-11-08T23:34:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tombe\.nuget\packages\communitytoolkit.mvvm\8.2.1\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2023-07-05T18:52:50.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tombe\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
