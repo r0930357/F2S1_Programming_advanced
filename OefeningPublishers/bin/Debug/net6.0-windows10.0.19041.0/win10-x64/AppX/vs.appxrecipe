@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\School\F2S1_Programming_advanced\OefeningPublishers\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-22T11:15:25.009</Modified>
+      <Modified>2023-12-22T12:57:20.839</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\School\F2S1_Programming_advanced\OefeningPublishers\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-22T11:15:24.231</Modified>
+      <Modified>2023-12-22T12:31:41.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\School\F2S1_Programming_advanced\OefeningPublishers\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\OefeningPublishers.runtimeconfig.json">
       <PackagePath>OefeningPublishers.runtimeconfig.json</PackagePath>
@@ -44,15 +44,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\School\F2S1_Programming_advanced\OefeningPublishers\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\OefeningPublishers.dll">
       <PackagePath>OefeningPublishers.dll</PackagePath>
-      <Modified>2023-12-22T11:15:23.380</Modified>
+      <Modified>2023-12-22T12:57:19.326</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\School\F2S1_Programming_advanced\OefeningPublishers\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\OefeningPublishers.dll.config">
       <PackagePath>OefeningPublishers.dll.config</PackagePath>
-      <Modified>2023-12-22T09:30:33.187</Modified>
+      <Modified>2023-12-22T11:37:26.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\School\F2S1_Programming_advanced\OefeningPublishers\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>OefeningPublishers.exe</PackagePath>
-      <Modified>2023-12-22T11:15:23.390</Modified>
+      <Modified>2023-12-22T12:57:19.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\School\F2S1_Programming_advanced\OefeningPublishers\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\OefeningPublishers.deps.json">
       <PackagePath>OefeningPublishers.deps.json</PackagePath>

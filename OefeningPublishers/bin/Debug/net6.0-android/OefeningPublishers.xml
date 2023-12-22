@@ -4,5 +4,146 @@
         <name>OefeningPublishers</name>
     </assembly>
     <members>
+        <member name="T:OefeningPublishers.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="T:OefeningPublishers.ViewModels.EmployeeViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.EmployeeViewModel.Employees">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.EmployeeViewModel.employees"/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.EmployeeViewModel.Id">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.EmployeeViewModel.id"/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.EmployeeViewModel.SelectedDate">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.EmployeeViewModel.selectedDate"/>
+        </member>
+        <member name="F:OefeningPublishers.ViewModels.EmployeeViewModel.alleWerknemersOphalenCommand">
+            <summary>The backing field for <see cref="P:OefeningPublishers.ViewModels.EmployeeViewModel.AlleWerknemersOphalenCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.EmployeeViewModel.AlleWerknemersOphalenCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningPublishers.ViewModels.EmployeeViewModel.AlleWerknemersOphalen"/>.</summary>
+        </member>
+        <member name="F:OefeningPublishers.ViewModels.EmployeeViewModel.werknemersOphalenViaAanwerfdatumCommand">
+            <summary>The backing field for <see cref="P:OefeningPublishers.ViewModels.EmployeeViewModel.WerknemersOphalenViaAanwerfdatumCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.EmployeeViewModel.WerknemersOphalenViaAanwerfdatumCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningPublishers.ViewModels.EmployeeViewModel.WerknemersOphalenViaAanwerfdatum"/>.</summary>
+        </member>
+        <member name="T:OefeningPublishers.ViewModels.StoreViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.Stores">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.StoreViewModel.stores"/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.Naam">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.StoreViewModel.naam"/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.Staat">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.StoreViewModel.staat"/>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.Id">
+            <inheritdoc cref="F:OefeningPublishers.ViewModels.StoreViewModel.id"/>
+        </member>
+        <member name="F:OefeningPublishers.ViewModels.StoreViewModel.storeOphalenViaNaamCommand">
+            <summary>The backing field for <see cref="P:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaNaamCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaNaamCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaNaam"/>.</summary>
+        </member>
+        <member name="F:OefeningPublishers.ViewModels.StoreViewModel.storeOphalenViaStaatCommand">
+            <summary>The backing field for <see cref="P:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaStaatCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaStaatCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaStaat"/>.</summary>
+        </member>
+        <member name="F:OefeningPublishers.ViewModels.StoreViewModel.storeOphalenViaNaamEnStaatCommand">
+            <summary>The backing field for <see cref="P:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaNaamEnStaatCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaNaamEnStaatCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningPublishers.ViewModels.StoreViewModel.StoreOphalenViaNaamEnStaat"/>.</summary>
+        </member>
+        <member name="F:OefeningPublishers.ViewModels.StoreViewModel.storesOphalenViaIdCommand">
+            <summary>The backing field for <see cref="P:OefeningPublishers.ViewModels.StoreViewModel.StoresOphalenViaIdCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.StoreViewModel.StoresOphalenViaIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningPublishers.ViewModels.StoreViewModel.StoresOphalenViaId"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Employees">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Employees" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Stores">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Stores" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Naam">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Naam" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Staat">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Staat" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Employees">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Employees" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Stores">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Stores" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Naam">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Naam" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Staat">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Staat" generated properties.</summary>
+        </member>
     </members>
 </doc>

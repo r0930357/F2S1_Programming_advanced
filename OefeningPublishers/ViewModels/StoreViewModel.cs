@@ -42,6 +42,30 @@ namespace OefeningPublishers.ViewModels
             IsBusy = false;
         }
 
+        [RelayCommand]
+        public void StoreOphalenViaNaamEnStaat()
+        {
+            IsBusy = true;
+            Stores = new ObservableCollection<Store>(_storesRepository.OphalenStoreViaNaamEnStaat(Naam, Staat));
+            IsBusy = false;
+        }
 
+        [RelayCommand]
+        public void StoresOphalenViaId()
+        {
+            if (!int.TryParse(Id, out int id))
+            {
+                Shell.Current.DisplayAlert("Fout", "Geef een geldige ID.", "Sluiten");
+                return;
+            }
+            IsBusy = true;
+            var store = _storesRepository.OphalenStoreViaId(id);
+            if (store == null)
+                Shell.Current.DisplayAlert("Fout", $"Store met ID {id} werd niet gevonden.", "Sluiten");
+            else
+                Shell.Current.DisplayAlert("Store gevonden", store.name, "Sluiten");
+
+            IsBusy = false;
+        }
     }
 }

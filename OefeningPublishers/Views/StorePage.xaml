@@ -6,20 +6,20 @@
     xmlns:viewmodels="clr-namespace:OefeningPublishers.ViewModels"
     x:DataType="viewmodels:StoreViewModel"
     Title="StoresPage">
+    
     <Grid RowDefinitions="*"
         ColumnDefinitions="*, *">
         <CollectionView Grid.Row="0"
             Grid.Column="0"
             Grid.RowSpan="4"
             SelectionMode="Single"
+            ItemsSource="{Binding Stores}"
             EmptyView="No items to display">
             <CollectionView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="models:Store">
                     <VerticalStackLayout Padding="10">
-                        <Label Text="Naam komt hier"
-                            FontSize="20" />
-                        <Label Text="Adres komt hier"
-                            FontSize="16" />
+                        <Label Text="{Binding name}" FontSize="20"/>
+                        <Label Text="{Binding state}" FontSize="16"/>
                     </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
@@ -60,6 +60,7 @@
                 IsEnabled="{Binding IsNotBusy}" />
 
             <Button Text="Ophalen via naam en staat"
+                    Command="{Binding StoreOphalenViaNaamEnStaatCommand}"
                 Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
@@ -70,6 +71,7 @@
                 Grid.Row="3"
                 Grid.Column="0" />
             <Button Text="Ophalen via id"
+                    Command="{Binding StoresOphalenViaIdCommand}"
                 Grid.Row="3"
                 Grid.Column="2"
                 IsEnabled="{Binding IsNotBusy}" />

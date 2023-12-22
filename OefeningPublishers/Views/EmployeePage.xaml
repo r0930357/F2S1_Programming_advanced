@@ -12,11 +12,12 @@
             Grid.Column="0"
             Grid.RowSpan="4"
             SelectionMode="Single"
+            ItemsSource="{Binding Employees}"
             EmptyView="No items to display">
             <CollectionView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="models:Employee">
                     <VerticalStackLayout Padding="10">
-                        <Label Text="Naam komt hier" FontSize="20" />
+                        <Label Text="{Binding fullName}" FontSize="20" />
                     </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
@@ -37,6 +38,7 @@
             Grid.Row="0"
             Grid.Column="1">
             <Button Text="Alle werknemers ophalen"
+                    Command="{Binding AlleWerknemersOphalenCommand}"
                 Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="2" />
@@ -64,14 +66,17 @@
                 IsEnabled="{Binding IsNotBusy}" />
 
             <DatePicker
+                Date="{Binding SelectedDate}"
                 Grid.Row="4"
                 Grid.Column="0" />
             <Button Text="Zoeken op aanwerfdatum"
+                    Command="{Binding WerknemersOphalenViaAanwerfdatumCommand}"
                 Grid.Row="4"
                 Grid.Column="1"
                 IsEnabled="{Binding IsNotBusy}" />
 
             <Entry Placeholder="Id"
+                   Text="{Binding Id}"
                 Grid.Row="5"
                 Grid.Column="0" />
             <Button Text="Zoeken op id"

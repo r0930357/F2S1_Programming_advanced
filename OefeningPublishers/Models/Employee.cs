@@ -16,5 +16,8 @@ namespace OefeningPublishers.Models
         public int? jobLevel { get; set; }
         public int publisherId { get; set; }
         public DateTime hireDate { get; set; }
+        public string fullName => $"{firstName} {lastName}";
+        public Publisher Publisher { get; set; }
+        public Job Job { get; set; }
     }
 }
