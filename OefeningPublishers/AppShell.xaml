@@ -14,12 +14,12 @@
         </Tab>
         <Tab Title="Stores">
             <ShellContent Title="Stores"
-                ContentTemplate="{DataTemplate views:StoresPage}"
+                ContentTemplate="{DataTemplate views:StorePage}"
                 Route="StoresPage" />
         </Tab>
         <Tab Title="Werknemers">
             <ShellContent Title="Werknemers"
-                ContentTemplate="{DataTemplate views:EmployeesPage}"
+                ContentTemplate="{DataTemplate views:EmployeePage}"
                 Route="EmployeesPage" />
         </Tab>
     </TabBar>

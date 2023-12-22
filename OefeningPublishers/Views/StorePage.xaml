@@ -40,17 +40,21 @@
             Grid.Row="0"
             Grid.Column="1">
             <Entry Placeholder="Naam"
+                   Text="{Binding Naam}"
                 Grid.Row="0"
                 Grid.Column="0" />
             <Button Text="Ophalen via naam"
+                    Command="{Binding StoreOphalenViaNaamCommand}"
                 Grid.Row="0"
                 Grid.Column="1"
                 IsEnabled="{Binding IsNotBusy}" />
 
             <Entry Placeholder="Staat"
+                   Text="{Binding Staat}"
                 Grid.Row="1"
                 Grid.Column="0" />
             <Button Text="Ophalen via staat"
+                    Command="{Binding StoreOphalenViaStaatCommand}"
                 Grid.Row="1"
                 Grid.Column="1"
                 IsEnabled="{Binding IsNotBusy}" />
@@ -62,6 +66,7 @@
                 IsEnabled="{Binding IsNotBusy}" />
 
             <Entry Placeholder="Id"
+                   Text="{Binding Id}"
                 Grid.Row="3"
                 Grid.Column="0" />
             <Button Text="Ophalen via id"
