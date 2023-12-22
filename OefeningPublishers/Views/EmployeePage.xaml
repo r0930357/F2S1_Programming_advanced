@@ -6,6 +6,7 @@
     xmlns:viewmodels="clr-namespace:OefeningPublishers.ViewModels"
     x:DataType="viewmodels:EmployeeViewModel"
     Title="EmployeesPage">
+    
     <Grid RowDefinitions="*" ColumnDefinitions="*, *">
         <CollectionView
     Grid.Row="0" Grid.Column="0"

@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = OefeningPublishers.Views.E
 build_metadata.AdditionalFiles.TargetPath = Views\EmployeePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\EmployeePage.xaml
 
+[D:/School/F2S1_Programming_advanced/OefeningPublishers/Views/InstellingenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OefeningPublishers.Views.InstellingenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InstellingenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InstellingenPage.xaml
+
 [D:/School/F2S1_Programming_advanced/OefeningPublishers/Views/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OefeningPublishers.Views.MainPage.xaml

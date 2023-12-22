@@ -15,6 +15,14 @@ namespace OefeningPublishers.ViewModels
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
         private bool isBusy;
 
+        [ObservableProperty]
+        public string achtergrondAfbeelding;
         public bool IsNotBusy => !IsBusy;
+
+        [RelayCommand]
+        public async Task GoBackAsync()
+        {
+            await Shell.Current.GoToAsync("..");
+        }
     }
 }

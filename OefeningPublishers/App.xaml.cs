@@ -8,4 +8,9 @@ public partial class App : Application
 
 		MainPage = new AppShell();
 	}
+    protected override void OnSleep()
+    {
+        MessagingCenter.Unsubscribe<InstellingenViewModel>(this, "ThemeChanged");
+    }
+
 }

@@ -6,11 +6,15 @@
     xmlns:views="clr-namespace:OefeningPublishers.Views"
     Shell.FlyoutBehavior="Disabled">
 
+
     <TabBar>
         <Tab Title="Home">
             <ShellContent Title="Home"
                 ContentTemplate="{DataTemplate views:MainPage}"
                 Route="MainPage" />
+            <ShellContent Title="Instellingen"
+                ContentTemplate="{DataTemplate views:InstellingenPage}"
+                Route="InstellingenPage"/>
         </Tab>
         <Tab Title="Stores">
             <ShellContent Title="Stores"
@@ -21,6 +25,11 @@
             <ShellContent Title="Werknemers"
                 ContentTemplate="{DataTemplate views:EmployeePage}"
                 Route="EmployeesPage" />
+        </Tab>
+        <Tab>
+            <ShellContent Title="Instellingen"
+                ContentTemplate="{DataTemplate views:InstellingenPage}"
+                Route="Instellingen"/>
         </Tab>
     </TabBar>
 </Shell>
