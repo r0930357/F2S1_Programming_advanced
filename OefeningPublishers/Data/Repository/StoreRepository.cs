@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OefeningPublishers.Data.Repository
 {
-    public class StoreRepository
+    public class StoreRepository : BaseRepository
     {
         public List<Store> OphalenStoresViaStaat(string staat)
         {
