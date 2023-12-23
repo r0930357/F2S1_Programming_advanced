@@ -9,6 +9,7 @@ namespace OefeningKlassikaalSQL.Data.Repository
     public interface IBookRepository
     {
         public Book OphalenBookViaId(int id);
-        public IEnumerable<Book> OphalenBooksByBookId(int bookId);
+        //public IEnumerable<Book> OphalenBooksByBookId(int bookId);
+        public Book OphalenBooksByBookId(int bookId);
     }
 }

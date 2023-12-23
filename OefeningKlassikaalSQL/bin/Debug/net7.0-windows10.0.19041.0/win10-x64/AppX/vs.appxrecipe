@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\School\r0930357\F2S1_Programming_advanced\OefeningKlassikaalSQL\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-23T11:26:19.502</Modified>
+      <Modified>2023-12-23T12:01:50.914</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\School\r0930357\F2S1_Programming_advanced\OefeningKlassikaalSQL\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-23T11:19:54.085</Modified>
+      <Modified>2023-12-23T11:59:52.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School\r0930357\F2S1_Programming_advanced\OefeningKlassikaalSQL\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\OefeningKlassikaalSQL.runtimeconfig.json">
       <PackagePath>OefeningKlassikaalSQL.runtimeconfig.json</PackagePath>
@@ -44,7 +44,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School\r0930357\F2S1_Programming_advanced\OefeningKlassikaalSQL\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\OefeningKlassikaalSQL.dll">
       <PackagePath>OefeningKlassikaalSQL.dll</PackagePath>
-      <Modified>2023-12-23T11:26:18.126</Modified>
+      <Modified>2023-12-23T12:01:49.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School\r0930357\F2S1_Programming_advanced\OefeningKlassikaalSQL\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\OefeningKlassikaalSQL.dll.config">
       <PackagePath>OefeningKlassikaalSQL.dll.config</PackagePath>
@@ -52,7 +52,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School\r0930357\F2S1_Programming_advanced\OefeningKlassikaalSQL\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>OefeningKlassikaalSQL.exe</PackagePath>
-      <Modified>2023-12-23T11:26:18.132</Modified>
+      <Modified>2023-12-23T12:01:49.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tombe\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.14\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -2124,7 +2124,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School\r0930357\F2S1_Programming_advanced\OefeningKlassikaalSQL\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\OefeningKlassikaalSQL.deps.json">
       <PackagePath>OefeningKlassikaalSQL.deps.json</PackagePath>
-      <Modified>2023-12-23T11:26:19.286</Modified>
+      <Modified>2023-12-23T12:01:50.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

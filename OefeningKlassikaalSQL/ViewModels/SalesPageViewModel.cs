@@ -18,6 +18,12 @@ namespace OefeningKlassikaalSQL.ViewModels
         [ObservableProperty]
         private string id;
 
+        [ObservableProperty]
+        private string bookId;
+        
+        [ObservableProperty]
+        private Book boek;
+
         private ISaleRepository _salesRepository;
         private IBookRepository _booksRepository;
 
@@ -64,7 +70,7 @@ namespace OefeningKlassikaalSQL.ViewModels
         public void CMD_OphalenBooksByBookId(Sale sale)
         {
             IsBusy = true;
-            Books = new ObservableCollection<Book>(_booksRepository.OphalenBooksByBookId(sale.bookId));
+            Boek = _booksRepository.OphalenBooksByBookId(int.Parse(BookId));
             IsBusy = false;
         }
     }

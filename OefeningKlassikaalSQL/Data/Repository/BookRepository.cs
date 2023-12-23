@@ -21,9 +21,9 @@ namespace OefeningKlassikaalSQL.Data.Repository
             }
         }
 
-        public IEnumerable<Book> OphalenBooksByBookId(int bookId)
+        public Book OphalenBooksByBookId(int bookId)
         {
-            string sql = @"SELECT B.*, P.* FROM Book B INNER JOIN Publisher P ON B.publisherId = P.Id WHERE B.id LIKE '%' + @bookId + '%'";
+            string sql = @"SELECT B.*, P.* FROM Book B INNER JOIN Publisher P ON B.publisherId = P.Id WHERE B.id=@bookId";
 
             using (IDbConnection db = new SqlConnection(ConnectionString))
             {
@@ -35,9 +35,8 @@ namespace OefeningKlassikaalSQL.Data.Repository
                         return book;
                     },
                     new { @bookId = bookId }
-                );
+                ).SingleOrDefault();
             }
         }
-
     }
 }

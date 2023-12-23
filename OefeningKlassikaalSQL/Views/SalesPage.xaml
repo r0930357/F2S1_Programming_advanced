@@ -8,19 +8,36 @@
              Title="SalesPage">
     
     <Grid RowDefinitions="*"
-        ColumnDefinitions="*, *">
+        ColumnDefinitions="*, *, *">
         <CollectionView Grid.Row="0"
             Grid.Column="0"
             Grid.RowSpan="4"
             SelectionMode="Single"
             ItemsSource="{Binding Sales}"
-            EmptyView="No items to display">
+            EmptyView="No sales items to display">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Sale">
                     <VerticalStackLayout Padding="10">
                         <Label Text="{Binding id}" FontSize="20"/>
                         <Label Text="{Binding store.name}" FontSize="20"/>
                         <Label Text="{Binding amount}" FontSize="16"/>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <CollectionView Grid.Row="0"
+            Grid.Column="1"
+            Grid.RowSpan="4"
+            SelectionMode="Single"
+            ItemsSource="{Binding Boek}"
+            EmptyView="No books items to display">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Book">
+                    <VerticalStackLayout Padding="10">
+                        <Label Text="{Binding id}" FontSize="20"/>
+                        <Label Text="{Binding title}" FontSize="20"/>
+                        <Label Text="{Binding pubisers.name}" FontSize="16"/>
                     </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
@@ -39,7 +56,7 @@
             RowDefinitions="auto,auto,auto,auto,auto"
             ColumnDefinitions="*, auto"
             Grid.Row="0"
-            Grid.Column="1">
+            Grid.Column="2">
             <Button Text="Alle sales ophalen"
                     Command="{Binding CMD_AlleSalesOphalenCommand}"
                 Grid.Row="0"
@@ -60,7 +77,18 @@
                     Command="{Binding CMD_OphalenSalesWithStoreNameCommand}"
                 Grid.Row="2"
                 Grid.Column="0"
-                Grid.ColumnSpan="0"
+                Grid.ColumnSpan="2"
+                IsEnabled="{Binding IsNotBusy}" />
+
+
+            <Entry Placeholder="Id"
+                   Text="{Binding BookId}"
+                Grid.Row="3"
+                Grid.Column="0" />
+            <Button Text="Sales ophalen via het Id"
+                    Command="{Binding CMD_OphalenBooksByBookIdCommand}"
+                Grid.Row="3"
+                Grid.Column="1"
                 IsEnabled="{Binding IsNotBusy}" />
         </Grid>
     </Grid>
