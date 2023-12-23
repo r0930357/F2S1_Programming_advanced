@@ -6,6 +6,7 @@
     <members>
         <member name="T:OefeningPublishers.ViewModels.BaseViewModel">
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:OefeningPublishers.ViewModels.BaseViewModel.Title">
             <inheritdoc cref="F:OefeningPublishers.ViewModels.BaseViewModel.title"/>
@@ -15,6 +16,12 @@
         </member>
         <member name="P:OefeningPublishers.ViewModels.BaseViewModel.AchtergrondAfbeelding">
             <inheritdoc cref="F:OefeningPublishers.ViewModels.BaseViewModel.achtergrondAfbeelding"/>
+        </member>
+        <member name="F:OefeningPublishers.ViewModels.BaseViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:OefeningPublishers.ViewModels.BaseViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningPublishers.ViewModels.BaseViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:OefeningPublishers.ViewModels.BaseViewModel.GoBackAsync"/>.</summary>
         </member>
         <member name="T:OefeningPublishers.ViewModels.EmployeeViewModel">
             <inheritdoc/>

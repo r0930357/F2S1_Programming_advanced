@@ -1,0 +1,35 @@
+Functies:
+ 
+	OphalenSales
+	sql = SELECT * FROM Book
+
+	OphalenSalesById
+	sql = SELECT * FROM Book WHERE Id=@id
+
+	OphalenSalesWothStoreName (Naam komt van Store)
+	sql = SELECT Sa.*, St.* FROM Sale Sa INNER JOIN Store St ON Sa.storeId = St.id
+
+	OphalenBooksByBookId (naam en adres ophalen van de publishers in nieuwelijst na klikken op een boek) => Sale => BookId => PublisherId
+	sql = SELECT B.*, P.* FROM Book B INNER JOIN Publisher P ON B.publisherId = P.Id WHERE B.id LIKE '%' + @bookId + '%'
+ 
+Uitwerking:
+ 
+	Wanneer er een sale geselecteerd wordt zal de functie OphalenBooksByBookId uitgevoerd worden.
+	Wanneer de boeken opgehaald worden moeten ook hun publishers opgehaald worden.
+ 
+Uitbreidingen:
+ 
+	Bij het ophalen van de Sales moet ook de Store naam opgehaald worden. 
+	Voeg deze naam ook toe in de View.
+ 
+Tabellen:
+	Sales
+	Books
+	Publishers
+	Stores (Uitbreiding)
+
+ 
+Extra uitbreiding:
+ 
+	Voeg boeken toe.
+	Zorg dat je een boek kan aanpassen.

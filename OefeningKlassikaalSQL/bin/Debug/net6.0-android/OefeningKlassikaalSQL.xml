@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OefeningKlassikaalSQL</name>
+    </assembly>
+    <members>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:OefeningKlassikaalSQL.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="F:OefeningKlassikaalSQL.ViewModels.BaseViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:OefeningKlassikaalSQL.ViewModels.BaseViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.BaseViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:OefeningKlassikaalSQL.ViewModels.BaseViewModel.GoBackAsync"/>.</summary>
+        </member>
+    </members>
+</doc>
