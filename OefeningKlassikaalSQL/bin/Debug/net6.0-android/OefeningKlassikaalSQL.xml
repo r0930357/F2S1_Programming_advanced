@@ -13,5 +13,38 @@
         <member name="P:OefeningKlassikaalSQL.ViewModels.BaseViewModel.GoBackCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:OefeningKlassikaalSQL.ViewModels.BaseViewModel.GoBackAsync"/>.</summary>
         </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.Sales">
+            <inheritdoc cref="F:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.sales"/>
+        </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.Books">
+            <inheritdoc cref="F:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.books"/>
+        </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.Id">
+            <inheritdoc cref="F:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.id"/>
+        </member>
+        <member name="F:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.cMD_AlleSalesOphalenCommand">
+            <summary>The backing field for <see cref="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_AlleSalesOphalenCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_AlleSalesOphalenCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_AlleSalesOphalen"/>.</summary>
+        </member>
+        <member name="F:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.cMD_OphalenSalesViaIdCommand">
+            <summary>The backing field for <see cref="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenSalesViaIdCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenSalesViaIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenSalesViaId"/>.</summary>
+        </member>
+        <member name="F:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.cMD_OphalenSalesWithStoreNameCommand">
+            <summary>The backing field for <see cref="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenSalesWithStoreNameCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenSalesWithStoreNameCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenSalesWithStoreName"/>.</summary>
+        </member>
+        <member name="F:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.cMD_OphalenBooksByBookIdCommand">
+            <summary>The backing field for <see cref="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenBooksByBookIdCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenBooksByBookIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:OefeningKlassikaalSQL.ViewModels.SalesPageViewModel.CMD_OphalenBooksByBookId(OefeningKlassikaalSQL.Models.Sale)"/>.</summary>
+        </member>
     </members>
 </doc>

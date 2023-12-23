@@ -13,13 +13,14 @@
             Grid.Column="0"
             Grid.RowSpan="4"
             SelectionMode="Single"
-            ItemsSource="Item Source Hier"
+            ItemsSource="{Binding Sales}"
             EmptyView="No items to display">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Sale">
                     <VerticalStackLayout Padding="10">
-                        <Label Text="{Binding name}" FontSize="20"/>
-                        <Label Text="{Binding state}" FontSize="16"/>
+                        <Label Text="{Binding id}" FontSize="20"/>
+                        <Label Text="{Binding store.name}" FontSize="20"/>
+                        <Label Text="{Binding amount}" FontSize="16"/>
                     </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
@@ -35,45 +36,31 @@
 
         <Grid RowSpacing="10"
             ColumnSpacing="10"
-            RowDefinitions="auto,auto,auto,auto"
+            RowDefinitions="auto,auto,auto,auto,auto"
             ColumnDefinitions="*, auto"
             Grid.Row="0"
             Grid.Column="1">
-            <Entry Placeholder="Naam"
-                   Text="{Binding Naam}"
-                Grid.Row="0"
-                Grid.Column="0" />
-            <Button Text="Ophalen via naam"
-                    Command="{Binding StoreOphalenViaNaamCommand}"
+            <Button Text="Alle sales ophalen"
+                    Command="{Binding CMD_AlleSalesOphalenCommand}"
                 Grid.Row="0"
                 Grid.Column="1"
-                IsEnabled="{Binding IsNotBusy}" />
-
-            <Entry Placeholder="Staat"
-                   Text="{Binding Staat}"
-                Grid.Row="1"
-                Grid.Column="0" />
-            <Button Text="Ophalen via staat"
-                    Command="{Binding StoreOphalenViaStaatCommand}"
-                Grid.Row="1"
-                Grid.Column="1"
-                IsEnabled="{Binding IsNotBusy}" />
-
-            <Button Text="Ophalen via naam en staat"
-                    Command="{Binding StoreOphalenViaNaamEnStaatCommand}"
-                Grid.Row="2"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
                 IsEnabled="{Binding IsNotBusy}" />
 
             <Entry Placeholder="Id"
                    Text="{Binding Id}"
-                Grid.Row="3"
+                Grid.Row="1"
                 Grid.Column="0" />
-            <Button Text="Ophalen via id"
-                    Command="{Binding StoresOphalenViaIdCommand}"
-                Grid.Row="3"
-                Grid.Column="2"
+            <Button Text="Sales ophalen via het Id"
+                    Command="{Binding CMD_OphalenSalesViaIdCommand}"
+                Grid.Row="1"
+                Grid.Column="1"
+                IsEnabled="{Binding IsNotBusy}" />
+
+            <Button Text="Alle sales ophalen"
+                    Command="{Binding CMD_OphalenSalesWithStoreNameCommand}"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="0"
                 IsEnabled="{Binding IsNotBusy}" />
         </Grid>
     </Grid>

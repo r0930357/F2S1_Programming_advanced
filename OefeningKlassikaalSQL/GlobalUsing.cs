@@ -10,6 +10,7 @@ global using OefeningKlassikaalSQL.Data;
 global using OefeningKlassikaalSQL.Data.Repository;
 global using OefeningKlassikaalSQL.Models;
 global using OefeningKlassikaalSQL.ViewModels;
+global using OefeningKlassikaalSQL.Views;
 
 // Data
 global using System.Data;

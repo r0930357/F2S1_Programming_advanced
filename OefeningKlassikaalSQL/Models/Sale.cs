@@ -10,7 +10,7 @@ namespace OefeningKlassikaalSQL.Models
     {
         public int id { get; set; }
         public int storeId { get; set; }
-        public int orderNumber { get; set; }
+        public string orderNumber { get; set; }
         public DateTime orderDate { get; set; }
         public int amount { get; set; }
         public int bookId { get; set; }
