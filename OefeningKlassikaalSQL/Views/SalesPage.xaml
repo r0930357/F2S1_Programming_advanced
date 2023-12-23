@@ -26,22 +26,13 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <CollectionView Grid.Row="0"
+        <VerticalStackLayout Padding="10" Grid.Row="0"
             Grid.Column="1"
-            Grid.RowSpan="4"
-            SelectionMode="Single"
-            ItemsSource="{Binding Boek}"
-            EmptyView="No books items to display">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Book">
-                    <VerticalStackLayout Padding="10">
-                        <Label Text="{Binding id}" FontSize="20"/>
-                        <Label Text="{Binding title}" FontSize="20"/>
-                        <Label Text="{Binding pubisers.name}" FontSize="16"/>
-                    </VerticalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+            Grid.RowSpan="4">
+            <Label Text="{Binding Boek.id}" FontSize="20"/>
+            <Label Text="{Binding Boek.title}" FontSize="20"/>
+            <Label Text="{Binding Boek.pubisers.name}" FontSize="16"/>
+        </VerticalStackLayout>
 
         <ActivityIndicator IsVisible="{Binding IsBusy}"
             IsRunning="{Binding IsBusy}"
