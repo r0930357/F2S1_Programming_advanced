@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voorbereidingsexamen.Views.BoekenPage"
+             xmlns:models="clr-namespace:Voorbereidingsexamen.Models"
+             xmlns:viewmodels="clr-namespace:Voorbereidingsexamen.ViewModels"
+             x:DataType="viewmodels:BoekenPageViewModel"
+             Title="BoekenPage">
+    
+    <Grid RowDefinitions="*"
+        ColumnDefinitions="*, *, *">
+        <CollectionView Grid.Row="0"
+            Grid.Column="0"
+            Grid.RowSpan="4"
+            SelectionMode="Single"
+            ItemsSource="{Binding Books}"
+            EmptyView="No books to display">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Book">
+                    <VerticalStackLayout Padding="10">
+                        <Label Text="{Binding id}" FontSize="20"/>
+                        <Label Text="{Binding title}" FontSize="20"/>
+                        <Label Text="{Binding price}" FontSize="16"/>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+            IsRunning="{Binding IsBusy}"
+            HorizontalOptions="Fill"
+            VerticalOptions="Center"
+            Color="{StaticResource Primary}"
+            Grid.RowSpan="1"
+            Grid.ColumnSpan="1" />
+
+        <Grid RowSpacing="10"
+            ColumnSpacing="10"
+            RowDefinitions="auto,auto"
+            ColumnDefinitions="*, auto"
+            Grid.Row="0"
+            Grid.Column="2">
+            <Button Text="Alle boeken ophalen"
+                    Command="{Binding CMD_OphalenBoekenCommand}"
+                Grid.Row="0"
+                Grid.Column="1"
+                IsEnabled="{Binding IsNotBusy}" />
+        </Grid>
+    </Grid>
+</ContentPage>

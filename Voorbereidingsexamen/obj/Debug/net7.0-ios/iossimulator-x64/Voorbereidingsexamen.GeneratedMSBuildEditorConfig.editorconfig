@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Voorbereidingsexamen
+build_property.ProjectDir = C:\School\r0930357\F2S1_Programming_advanced\Voorbereidingsexamen\
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/Views/BoekenAuteurPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.Views.BoekenAuteurPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BoekenAuteurPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BoekenAuteurPage.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/Views/BoekenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.Views.BoekenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BoekenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BoekenPage.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/Voorbereidingsexamen/Views/WerknemersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voorbereidingsexamen.Views.WerknemersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WerknemersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WerknemersPage.xaml

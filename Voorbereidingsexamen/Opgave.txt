@@ -1,0 +1,16 @@
+VOORBEREIDEND EXAMEN:
+
+- Haal alle boeken op uit de Publisher databank. (Details: Boek ID, titel en prijs gesorteerd op prijs en releasedate).
+- Geef alle boeken en hun auteur (Fullname = firstName + lastName)
+- Geef alle werknemers (employee) waarbij de publisher in de USA woont (Details: volledige naam)
+
+Uitbreiding:
+
+- Haal alle werknemers (employee) op waarbij het min leven groter is dan 100 en het max level kleiner of gelijk is aan 255 (Details: volledige naam en de jobdescription).
+
+
+NuGet Packages:
+- CommunityToolkit.Mvvm
+- Dapper
+- Microsoft.Data.SqlClient
+- System.Configuration.ConfigurationManager
