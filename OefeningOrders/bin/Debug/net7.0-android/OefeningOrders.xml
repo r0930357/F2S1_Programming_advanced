@@ -14,6 +14,9 @@
         <member name="P:OefeningOrders.ViewModels.BaseViewModel.IsBusy">
             <inheritdoc cref="F:OefeningOrders.ViewModels.BaseViewModel.isBusy"/>
         </member>
+        <member name="P:OefeningOrders.ViewModels.BaseViewModel.AchtergrondAfbeelding">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.BaseViewModel.achtergrondAfbeelding"/>
+        </member>
         <member name="F:OefeningOrders.ViewModels.BaseViewModel.goBackCommand">
             <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.BaseViewModel.GoBackCommand"/>.</summary>
         </member>
@@ -51,9 +54,17 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.Orders">
             <inheritdoc cref="F:OefeningOrders.ViewModels.OrdersPageViewModel.orders"/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.Orderlijnen">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.OrdersPageViewModel.orderlijnen"/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.Id">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.OrdersPageViewModel.id"/>
         </member>
         <member name="F:OefeningOrders.ViewModels.OrdersPageViewModel.cMD_OphalenAlleOrdersCommand">
             <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenAlleOrdersCommand"/>.</summary>
@@ -61,11 +72,23 @@
         <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenAlleOrdersCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenAlleOrders"/>.</summary>
         </member>
+        <member name="F:OefeningOrders.ViewModels.OrdersPageViewModel.cMD_OphalenWerknemerViaIdCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenWerknemerViaIdCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenWerknemerViaIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenWerknemerViaId"/>.</summary>
+        </member>
         <member name="F:OefeningOrders.ViewModels.OrdersPageViewModel.cMD_OphalenOrdersMetKlantenEnWerknemersCommand">
             <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetKlantenEnWerknemersCommand"/>.</summary>
         </member>
         <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetKlantenEnWerknemersCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetKlantenEnWerknemers"/>.</summary>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.OrdersPageViewModel.cMD_OphalenOrdersMetProductenCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetProductenCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetProductenCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetProducten"/>.</summary>
         </member>
         <member name="T:OefeningOrders.ViewModels.ProductenPageViewModel">
             <inheritdoc/>
@@ -80,6 +103,55 @@
         <member name="P:OefeningOrders.ViewModels.ProductenPageViewModel.CMD_OphalenAlleProductenCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.ProductenPageViewModel.CMD_OphalenAlleProducten"/>.</summary>
         </member>
+        <member name="T:OefeningOrders.ViewModels.WerknemersDetailPageViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersDetailPageViewModel.Werknemers">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.WerknemersDetailPageViewModel.werknemers"/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersDetailPageViewModel.Id">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.WerknemersDetailPageViewModel.id"/>
+        </member>
+        <member name="T:OefeningOrders.ViewModels.WerknemersPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersPageViewModel.Werknemer">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.WerknemersPageViewModel.werknemer"/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersPageViewModel.Id">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.WerknemersPageViewModel.id"/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersPageViewModel.Achternaam">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.WerknemersPageViewModel.achternaam"/>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.WerknemersPageViewModel.cMD_OphalenAlleWerknemersCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenAlleWerknemersCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenAlleWerknemersCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenAlleWerknemers"/>.</summary>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.WerknemersPageViewModel.cMD_OphalenWerknemersViaNaamCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenWerknemersViaNaamCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenWerknemersViaNaamCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenWerknemersViaNaam"/>.</summary>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.WerknemersPageViewModel.cMD_OphalenWerknemerViaIdCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenWerknemerViaIdCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenWerknemerViaIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.WerknemersPageViewModel.CMD_OphalenWerknemerViaId"/>.</summary>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.WerknemersPageViewModel.goToDetailsCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.WerknemersPageViewModel.GoToDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.WerknemersPageViewModel.GoToDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.WerknemersPageViewModel.GoToDetails(OefeningOrders.Models.Werknemers)"/>.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
@@ -92,14 +164,32 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AchtergrondAfbeelding">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AchtergrondAfbeelding" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsToggled">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsToggled" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Orders">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Orders" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Orderlijnen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Orderlijnen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Producten">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Producten" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Werknemers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Werknemers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Werknemer">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Werknemer" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Achternaam">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Achternaam" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -116,14 +206,32 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotBusy" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AchtergrondAfbeelding">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AchtergrondAfbeelding" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsToggled">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsToggled" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Orders">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Orders" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Orderlijnen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Orderlijnen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Producten">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Producten" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Werknemers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Werknemers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Werknemer">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Werknemer" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Achternaam">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Achternaam" generated properties.</summary>
         </member>
     </members>
 </doc>

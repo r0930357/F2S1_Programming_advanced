@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OefeningOrders.Views.WerknemersDetailPage"
+             xmlns:models="clr-namespace:OefeningOrders.Models"
+             xmlns:viewmodels="clr-namespace:OefeningOrders.ViewModels"
+             x:DataType="viewmodels:WerknemersDetailPageViewModel"
+             Title="Werknemers Detail Pagina">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10">
+            <CollectionView ItemsSource="{Binding Werknemers}" Grid.Row="1">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="5"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Werknemers">
+                        <Grid Padding="10">
+                            <VerticalStackLayout Padding="10">
+                                <Label FontSize="20">
+                                    <Label.Text>
+                                        <MultiBinding StringFormat="Werkmener {} heeft ID: {1}, is geboren op {2} en in dienst sinds {3}.">
+                                            <Binding Source="{x:Reference SelectedWerknemers.volledigeNaam}" Path="Text" />
+                                            <Binding Source="{x:Reference SelectedWerknemers.id}" Path="Text" />
+                                            <Binding Source="{x:Reference SelectedWerknemers.geboortedatum}" Path="Text" />
+                                            <Binding Source="{x:Reference SelectedWerknemers.inDienst}" Path="Text" />
+                                        </MultiBinding>
+                                    </Label.Text>
+                                </Label>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

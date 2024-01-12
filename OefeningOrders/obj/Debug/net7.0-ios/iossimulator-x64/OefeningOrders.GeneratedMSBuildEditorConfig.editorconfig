@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = OefeningOrders.Views.MainP
 build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
 
+[C:/School/r0930357/F2S1_Programming_advanced/OefeningOrders/Views/OrderlijnenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OefeningOrders.Views.OrderlijnenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OrderlijnenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OrderlijnenPage.xaml
+
 [C:/School/r0930357/F2S1_Programming_advanced/OefeningOrders/Views/OrdersPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OefeningOrders.Views.OrdersPage.xaml
@@ -57,6 +63,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OefeningOrders.Views.ProductenPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ProductenPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProductenPage.xaml
+
+[C:/School/r0930357/F2S1_Programming_advanced/OefeningOrders/Views/WerknemersDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OefeningOrders.Views.WerknemersDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WerknemersDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WerknemersDetailPage.xaml
 
 [C:/School/r0930357/F2S1_Programming_advanced/OefeningOrders/Views/WerknemersPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -14,6 +14,12 @@ namespace OefeningOrders.ViewModels
         [ObservableProperty]
         private ObservableCollection<Orders> orders;
 
+        [ObservableProperty]
+        private ObservableCollection<Orderlijnen> orderlijnen;
+
+        [ObservableProperty]
+        private int id;
+
         public OrdersPageViewModel()
         {
             _ordersRepository = new OrdersRepository();
@@ -27,6 +33,19 @@ namespace OefeningOrders.ViewModels
             IsBusy = false;
         }
 
+        // Ophalen van één werknemer op basis van het id
+        [RelayCommand]
+        public void CMD_OphalenWerknemerViaId()
+        {
+            IsBusy = true;
+            var orders = _ordersRepository.OphalenOrdersViaId(Id);
+            if (orders == null)
+                Shell.Current.DisplayAlert("Fout", $"Het order met ID {Id} werd niet gevonden.", "Sluiten");
+            else
+                Shell.Current.DisplayAlert("Order gevonden", "" , "Sluiten");
+            IsBusy = false;
+        }
+
         [RelayCommand]
         public void CMD_OphalenOrdersMetKlantenEnWerknemers()
         {
@@ -35,12 +54,12 @@ namespace OefeningOrders.ViewModels
             IsBusy = false;
         }
 
-        //[RelayCommand]
-        //public void CMD_OphalenOrdersMetProducten()
-        //{
-        //    IsBusy = true;
-        //    Orders = new ObservableCollection<Orders>(_ordersRepository.OphalenOrdersMetProducten());
-        //    IsBusy = false;
-        //}
+        [RelayCommand]
+        public void CMD_OphalenOrdersMetProducten()
+        {
+            IsBusy = true;
+            Orderlijnen = new ObservableCollection<Orderlijnen>(_ordersRepository.OphalenOrdersMetProducten());
+            IsBusy = false;
+        }
     }
 }

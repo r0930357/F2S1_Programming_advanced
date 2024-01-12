@@ -8,6 +8,10 @@ namespace OefeningOrders.Data.Repositories
 {
     public interface IWerknemersRepository
     {
-        public List<Werknemers> OphalenAlleOrders();
+        public List<Werknemers> OphalenAlleWerknemers();
+
+        public List<Werknemers> OphalenWerknemersViaNaam(string achternaam);
+
+        public Werknemers OphalenWerknemerViaId(int id);
     }
 }

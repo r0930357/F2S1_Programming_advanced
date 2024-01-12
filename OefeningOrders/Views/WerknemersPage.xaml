@@ -6,10 +6,47 @@
              xmlns:viewmodels="clr-namespace:OefeningOrders.ViewModels"
              x:DataType="viewmodels:WerknemersPageViewModel"
              Title="Werknemers Pagina">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    <Grid RowDefinitions="*" ColumnDefinitions="*, *">
+        <CollectionView
+    Grid.Row="0" Grid.Column="0"
+        Grid.RowSpan="4"
+    SelectionMode="Single" ItemsSource="{Binding Werknemer}" EmptyView="No items to display">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Werknemers">
+                    <VerticalStackLayout Padding="10">
+                        <Frame HeightRequest="125">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:WerknemersPageViewModel}}, Path=GoToDetailsCommand}"/>
+                            </Frame.GestureRecognizers>
+
+                            <Label Text="{Binding volledigeNaam}" FontSize="16" />
+                        </Frame>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                   IsRunning="{Binding IsBusy}"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Center"
+                   Color="{StaticResource Primary}"
+                   Grid.RowSpan="1"
+                   Grid.ColumnSpan="1" />
+
+        <Grid RowSpacing="10" ColumnSpacing="10" RowDefinitions="auto,auto,auto,auto,auto, auto" ColumnDefinitions="*, auto" Grid.Row="0" Grid.Column="1">
+            <Button Text="Alle orders ophalen" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" IsEnabled="{Binding IsNotBusy}"
+                    Command="{Binding CMD_OphalenAlleWerknemersCommand}" />
+
+            <Entry Placeholder="Id" Text="{Binding Achternaam}" Grid.Row="1" Grid.Column="0" />
+            <Button Text="Zoeken op naam" Grid.Row="1" Grid.Column="1" IsEnabled="{Binding IsNotBusy}"
+                    Command="{Binding CMD_OphalenWerknemersViaNaamCommand}" />
+
+            <Entry Placeholder="Id" Text="{Binding Id}" Grid.Row="2" Grid.Column="0" />
+            <Button Text="Zoeken op id" Grid.Row="2" Grid.Column="1" IsEnabled="{Binding IsNotBusy}"
+                    Command="{Binding CMD_OphalenWerknemerViaIdCommand}" />
+        </Grid>
+    </Grid>
 </ContentPage>

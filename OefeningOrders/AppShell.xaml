@@ -25,6 +25,9 @@
             <ShellContent Title="Orders"
                 ContentTemplate="{DataTemplate views:OrdersPage}"
                 Route="OrdersPage" />
+            <ShellContent Title="Orderlijnen"
+                ContentTemplate="{DataTemplate views:OrderlijnenPage}"
+                Route="OrderlijnenPage" />
         </Tab>
         
         <Tab Title="Producten">

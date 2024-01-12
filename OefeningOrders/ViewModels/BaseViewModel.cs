@@ -15,6 +15,9 @@ namespace OefeningOrders.ViewModels
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
         private bool isBusy;
 
+        [ObservableProperty]
+        public string achtergrondAfbeelding;
+
         public bool IsNotBusy => !IsBusy;
 
         [RelayCommand]
@@ -22,5 +25,9 @@ namespace OefeningOrders.ViewModels
         {
             await Shell.Current.GoToAsync("..");
         }
+        public virtual void Initialize(Dictionary<string, object> navigationData)
+        {
+        }
+
     }
 }

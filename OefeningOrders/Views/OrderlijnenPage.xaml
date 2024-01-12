@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OefeningOrders.Views.OrderlijnenPage"
+             xmlns:models="clr-namespace:OefeningOrders.Models"
+             xmlns:viewmodels="clr-namespace:OefeningOrders.ViewModels"
+             x:DataType="viewmodels:OrdersPageViewModel"
+             Title="Orderlijnen pagina">
+
+    <Grid RowDefinitions="*" ColumnDefinitions="*, *">
+        <CollectionView
+    Grid.Row="0" Grid.Column="0"
+        Grid.RowSpan="4"
+    SelectionMode="Single" ItemsSource="{Binding Orderlijnen}" EmptyView="No items to display">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Orderlijnen">
+                    <VerticalStackLayout Padding="10">
+                        <Label Text="{Binding orders.id}" FontSize="16" />
+                        <Label Text="{Binding product.naam}" FontSize="14" />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                   IsRunning="{Binding IsBusy}"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Center"
+                   Color="{StaticResource Primary}"
+                   Grid.RowSpan="1"
+                   Grid.ColumnSpan="1" />
+
+        <!--<Button Text="Orders ophalen met klant en werknemer" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" IsEnabled="{Binding IsNotBusy}"
+                    Command="{Binding CMD_OphalenOrdersMetProductenCommand}" />-->
+    </Grid>
+</ContentPage>

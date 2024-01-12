@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace OefeningOrders;
 
@@ -23,6 +24,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<InstellingenViewModel>();
 
         builder.Services.AddSingleton<OrdersPage>();
+        builder.Services.AddSingleton<OrderlijnenPage>();
         builder.Services.AddSingleton<OrdersPageViewModel>();
 
         builder.Services.AddSingleton<ProductenPage>();
@@ -30,6 +32,10 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<WerknemersPage>();
         builder.Services.AddSingleton<WerknemersPageViewModel>();
-        return builder.Build();
+
+		builder.Services.AddSingleton<WerknemersDetailPage>();
+		builder.Services.AddSingleton<WerknemersDetailPageViewModel>();
+
+		return builder.Build();
 	}
 }

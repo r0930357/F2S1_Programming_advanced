@@ -6,12 +6,12 @@
              xmlns:viewmodels="clr-namespace:OefeningOrders.ViewModels"
              x:DataType="viewmodels:MainPageViewModel"
              Title="Hoofdpagina">
-
-    <VerticalStackLayout>
-        <Label 
+    
+        <VerticalStackLayout>
+            <Label 
             Text="Een oefening met de orders databank"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
-        
+        </VerticalStackLayout>
+            
 </ContentPage>

@@ -35,12 +35,15 @@
             <Button Text="Alle orders ophalen" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" IsEnabled="{Binding IsNotBusy}"
                     Command="{Binding CMD_OphalenAlleOrdersCommand}" />
 
-            <Button Text="Orders ophalen met klant en werknemer" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" IsEnabled="{Binding IsNotBusy}"
+            <Entry Placeholder="Id" Text="{Binding Id}" Grid.Row="1" Grid.Column="0" />
+            <Button Text="Zoeken op id" Grid.Row="1" Grid.Column="1" IsEnabled="{Binding IsNotBusy}"
+                    Command="{Binding CMD_OphalenWerknemerViaIdCommand}" />
+
+            <Button Text="Orders ophalen met klant en werknemer" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" IsEnabled="{Binding IsNotBusy}"
                     Command="{Binding CMD_OphalenOrdersMetKlantenEnWerknemersCommand}" />
 
-            <!--<Entry Placeholder="Id" Text="{Binding Id}" Grid.Row="5" Grid.Column="0" />
-            <Button Text="Zoeken op id" Grid.Row="5" Grid.Column="1" IsEnabled="{Binding IsNotBusy}"
-                    Command="{Binding CMD_CMD_OphalenOrdersMetKlantenEnWerknemers}" />-->
+            <!--<Button Text="Orders ophalen met klant en werknemer" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" IsEnabled="{Binding IsNotBusy}"
+                    Command="{Binding CMD_OphalenOrdersMetProducten}" />-->
         </Grid>
     </Grid>
 </ContentPage>

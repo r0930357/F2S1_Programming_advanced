@@ -19,6 +19,7 @@ namespace OefeningOrders.ViewModels
             _productenRepository = new ProductenRepository();
         }
 
+        // Ophalen van alle producten
         [RelayCommand]
         public void CMD_OphalenAlleProducten()
         {
