@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OefeningOrders</name>
+    </assembly>
+    <members>
+        <member name="T:OefeningOrders.ViewModels.BaseViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.BaseViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.BaseViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.BaseViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.BaseViewModel.GoBackAsync"/>.</summary>
+        </member>
+        <member name="T:OefeningOrders.ViewModels.InstellingenViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.InstellingenViewModel.IsToggled">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.InstellingenViewModel.isToggled"/>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.InstellingenViewModel.toggleThemeCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.InstellingenViewModel.ToggleThemeCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.InstellingenViewModel.ToggleThemeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.InstellingenViewModel.ToggleTheme"/>.</summary>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.InstellingenViewModel.selectImageLightCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.InstellingenViewModel.SelectImageLightCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.InstellingenViewModel.SelectImageLightCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.InstellingenViewModel.SelectImageLight"/>.</summary>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.InstellingenViewModel.selectImageDarkCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.InstellingenViewModel.SelectImageDarkCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.InstellingenViewModel.SelectImageDarkCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.InstellingenViewModel.SelectImageDark"/>.</summary>
+        </member>
+        <member name="T:OefeningOrders.ViewModels.OrdersPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.Orders">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.OrdersPageViewModel.orders"/>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.OrdersPageViewModel.cMD_OphalenAlleOrdersCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenAlleOrdersCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenAlleOrdersCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenAlleOrders"/>.</summary>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.OrdersPageViewModel.cMD_OphalenOrdersMetKlantenEnWerknemersCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetKlantenEnWerknemersCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetKlantenEnWerknemersCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.OrdersPageViewModel.CMD_OphalenOrdersMetKlantenEnWerknemers"/>.</summary>
+        </member>
+        <member name="T:OefeningOrders.ViewModels.ProductenPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.ProductenPageViewModel.Producten">
+            <inheritdoc cref="F:OefeningOrders.ViewModels.ProductenPageViewModel.producten"/>
+        </member>
+        <member name="F:OefeningOrders.ViewModels.ProductenPageViewModel.cMD_OphalenAlleProductenCommand">
+            <summary>The backing field for <see cref="P:OefeningOrders.ViewModels.ProductenPageViewModel.CMD_OphalenAlleProductenCommand"/>.</summary>
+        </member>
+        <member name="P:OefeningOrders.ViewModels.ProductenPageViewModel.CMD_OphalenAlleProductenCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:OefeningOrders.ViewModels.ProductenPageViewModel.CMD_OphalenAlleProducten"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsToggled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsToggled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Orders" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Producten">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Producten" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsToggled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsToggled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Orders" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Producten">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Producten" generated properties.</summary>
+        </member>
+    </members>
+</doc>
